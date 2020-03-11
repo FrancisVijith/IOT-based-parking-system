@@ -1,0 +1,239 @@
+[p GLOBOPT AUTOSTATIC IEEE_DBL IEEE_FLT PIC14 PICREGULAR PICMID ]
+[d version 1.1 ]
+[d edition pro ]
+[d chip 16F877A ]
+[d frameptr 0 ]
+"10 C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\sprcadd.c
+[v ___fladd __fladd `(d  1 e 4 0 ]
+"13 C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\sprintf.c
+[v _sprintf sprintf `(i  1 e 2 0 ]
+"4 C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\strlen.c
+[v _strlen strlen `(ui  1 e 2 0 ]
+"15 C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\Umul16.c
+[v ___wmul __wmul `(ui  1 e 2 0 ]
+"4 C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\Umul8.c
+[v ___bmul __bmul `(uc  1 e 1 0 ]
+"4 C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\Umul8_16.c
+[v __Umul8_16 _Umul8_16 `(ui  1 e 2 0 ]
+"6 C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\pic\__eeprom.c
+[v ___eecpymem __eecpymem `(v  1 e 1 0 ]
+"39
+[v ___memcpyee __memcpyee `(v  1 e 1 0 ]
+"53 C:\Users\Admin\MPLABXProjects\test.X\work.c
+[v _Lcd_SetBit Lcd_SetBit `(v  1 e 1 0 ]
+"76
+[v _Lcd_Cmd Lcd_Cmd `(v  1 e 1 0 ]
+"85
+[v _Lcd_Clear Lcd_Clear `(v  1 e 1 0 ]
+"91
+[v _Lcd_Set_Cursor Lcd_Set_Cursor `(v  1 e 1 0 ]
+"112
+[v _Lcd_Start Lcd_Start `(v  1 e 1 0 ]
+"130
+[v _Lcd_Print_Char Lcd_Print_Char `(v  1 e 1 0 ]
+"146
+[v _Lcd_Print_String Lcd_Print_String `(v  1 e 1 0 ]
+"153
+[v _Initialize_ESP8266 Initialize_ESP8266 `(v  1 e 1 0 ]
+"183
+[v _esp8266_config_softAP esp8266_config_softAP `(uc  1 e 1 0 ]
+"193
+[v __esp8266_putch _esp8266_putch `(v  1 e 1 0 ]
+"201
+[v __esp8266_getch _esp8266_getch `(uc  1 e 1 0 ]
+"238
+[v _esp8266_isStarted esp8266_isStarted `(uc  1 e 1 0 ]
+"290
+[v _esp8266_mode esp8266_mode `(v  1 e 1 0 ]
+"461
+[v __esp8266_print _esp8266_print `(v  1 e 1 0 ]
+"477
+[v __esp8266_waitFor _esp8266_waitFor `T(ui  1 e 2 0 ]
+"511
+[v __esp8266_waitResponse _esp8266_waitResponse `T(uc  1 e 1 0 ]
+"535
+[v _main main `(v  1 e 1 0 ]
+"1059 C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f877a.h
+[v _TXREG TXREG `VEuc  1 e 1 @25 ]
+"1066
+[v _RCREG RCREG `VEuc  1 e 1 @26 ]
+"1499
+[v _TRISD TRISD `VEuc  1 e 1 @136 ]
+"2080
+[v _SPBRG SPBRG `VEuc  1 e 1 @153 ]
+"2416
+[v _BRGH BRGH `VEb  1 e 0 @1218 ]
+"2515
+[v _CREN CREN `VEb  1 e 0 @196 ]
+"2614
+[v _OERR OERR `VEb  1 e 0 @193 ]
+"2743
+[v _RCIF RCIF `VEb  1 e 0 @101 ]
+"2755
+[v _RD2 RD2 `VEb  1 e 0 @66 ]
+"2758
+[v _RD3 RD3 `VEb  1 e 0 @67 ]
+"2761
+[v _RD4 RD4 `VEb  1 e 0 @68 ]
+"2764
+[v _RD5 RD5 `VEb  1 e 0 @69 ]
+"2767
+[v _RD6 RD6 `VEb  1 e 0 @70 ]
+"2770
+[v _RD7 RD7 `VEb  1 e 0 @71 ]
+"2794
+[v _RX9 RX9 `VEb  1 e 0 @198 ]
+"2812
+[v _SPEN SPEN `VEb  1 e 0 @199 ]
+"2842
+[v _SYNC SYNC `VEb  1 e 0 @1220 ]
+"2977
+[v _TRISC6 TRISC6 `VEb  1 e 0 @1086 ]
+"2980
+[v _TRISC7 TRISC7 `VEb  1 e 0 @1087 ]
+"3022
+[v _TX9 TX9 `VEb  1 e 0 @1222 ]
+"3031
+[v _TXEN TXEN `VEb  1 e 0 @1221 ]
+"3037
+[v _TXIF TXIF `VEb  1 e 0 @100 ]
+"535 C:\Users\Admin\MPLABXProjects\test.X\work.c
+[v _main main `(v  1 e 1 0 ]
+{
+"587
+} 0
+"290
+[v _esp8266_mode esp8266_mode `(v  1 e 1 0 ]
+{
+[v esp8266_mode@mode mode `uc  1 a 1 wreg ]
+[v esp8266_mode@mode mode `uc  1 a 1 wreg ]
+[v esp8266_mode@mode mode `uc  1 a 1 4 ]
+"295
+} 0
+"238
+[v _esp8266_isStarted esp8266_isStarted `(uc  1 e 1 0 ]
+{
+"241
+} 0
+"183
+[v _esp8266_config_softAP esp8266_config_softAP `(uc  1 e 1 0 ]
+{
+[v esp8266_config_softAP@softssid softssid `*.25uc  1 p 2 4 ]
+[v esp8266_config_softAP@softpass softpass `*.25uc  1 p 2 6 ]
+"190
+} 0
+"511
+[v __esp8266_waitResponse _esp8266_waitResponse `T(uc  1 e 1 0 ]
+{
+"521
+[v __esp8266_waitResponse@i i `uc  1 a 1 21 ]
+"514
+[v __esp8266_waitResponse@strings strings `[6]*.25DCuc  1 a 12 0 ]
+"512
+[v __esp8266_waitResponse@so_far so_far `[6]uc  1 a 6 12 ]
+"518
+[v __esp8266_waitResponse@continue_loop continue_loop `a  1 a 1 20 ]
+"517
+[v __esp8266_waitResponse@response response `uc  1 a 1 19 ]
+"516
+[v __esp8266_waitResponse@received received `uc  1 a 1 18 ]
+"513
+[v __esp8266_waitResponse@lengths lengths `DC[6]uc  1 s 6 lengths ]
+[v __esp8266_waitResponse@F1101 F1101 `[6]*.25DCuc  1 s 12 F1101 ]
+"515
+[v __esp8266_waitResponse@responses responses `DC[6]uc  1 s 6 responses ]
+"534
+} 0
+"201
+[v __esp8266_getch _esp8266_getch `(uc  1 e 1 0 ]
+{
+"212
+} 0
+"461
+[v __esp8266_print _esp8266_print `(v  1 e 1 0 ]
+{
+[v __esp8266_print@ptr ptr `*.26DCuc  1 p 2 1 ]
+"465
+} 0
+"193
+[v __esp8266_putch _esp8266_putch `(v  1 e 1 0 ]
+{
+[v __esp8266_putch@bt bt `uc  1 a 1 wreg ]
+[v __esp8266_putch@bt bt `uc  1 a 1 wreg ]
+[v __esp8266_putch@bt bt `uc  1 a 1 0 ]
+"197
+} 0
+"112
+[v _Lcd_Start Lcd_Start `(v  1 e 1 0 ]
+{
+"128
+} 0
+"91
+[v _Lcd_Set_Cursor Lcd_Set_Cursor `(v  1 e 1 0 ]
+{
+[v Lcd_Set_Cursor@a a `uc  1 a 1 wreg ]
+"93
+[v Lcd_Set_Cursor@temp temp `uc  1 a 1 10 ]
+[v Lcd_Set_Cursor@y y `uc  1 a 1 9 ]
+[v Lcd_Set_Cursor@z z `uc  1 a 1 8 ]
+"91
+[v Lcd_Set_Cursor@a a `uc  1 a 1 wreg ]
+[v Lcd_Set_Cursor@b b `uc  1 p 1 4 ]
+"94
+[v Lcd_Set_Cursor@a a `uc  1 a 1 7 ]
+"110
+} 0
+"146
+[v _Lcd_Print_String Lcd_Print_String `(v  1 e 1 0 ]
+{
+"148
+[v Lcd_Print_String@i i `i  1 a 2 0 ]
+"146
+[v Lcd_Print_String@a a `*.25uc  1 p 2 9 ]
+"151
+} 0
+"130
+[v _Lcd_Print_Char Lcd_Print_Char `(v  1 e 1 0 ]
+{
+[v Lcd_Print_Char@data data `uc  1 a 1 wreg ]
+"142
+[v Lcd_Print_Char@i_97 i `i  1 a 2 7 ]
+"138
+[v Lcd_Print_Char@i i `i  1 a 2 5 ]
+"132
+[v Lcd_Print_Char@Upper_Nibble Upper_Nibble `uc  1 a 1 3 ]
+[v Lcd_Print_Char@Lower_Nibble Lower_Nibble `uc  1 a 1 2 ]
+"130
+[v Lcd_Print_Char@data data `uc  1 a 1 wreg ]
+"133
+[v Lcd_Print_Char@data data `uc  1 a 1 4 ]
+"144
+} 0
+"85
+[v _Lcd_Clear Lcd_Clear `(v  1 e 1 0 ]
+{
+"89
+} 0
+"76
+[v _Lcd_Cmd Lcd_Cmd `(v  1 e 1 0 ]
+{
+[v Lcd_Cmd@a a `uc  1 a 1 wreg ]
+[v Lcd_Cmd@a a `uc  1 a 1 wreg ]
+"78
+[v Lcd_Cmd@a a `uc  1 a 1 3 ]
+"83
+} 0
+"53
+[v _Lcd_SetBit Lcd_SetBit `(v  1 e 1 0 ]
+{
+[v Lcd_SetBit@data_bit data_bit `uc  1 a 1 wreg ]
+[v Lcd_SetBit@data_bit data_bit `uc  1 a 1 wreg ]
+"55
+[v Lcd_SetBit@data_bit data_bit `uc  1 a 1 0 ]
+"74
+} 0
+"153
+[v _Initialize_ESP8266 Initialize_ESP8266 `(v  1 e 1 0 ]
+{
+"179
+} 0
