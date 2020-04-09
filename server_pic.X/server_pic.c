@@ -566,7 +566,8 @@ void main()
     ESP8266_send_string(cmd);//sending the IP address to connect to thingspeak server
     getStr = "GET /update?api_key="+apiKey; //updating the value using API write key
     getStr = "&field1=" + getStr + value1;//updating the value using API write key
-    
+    __delay_ms(20000);
+            __delay_ms(200000);//thingspeak updating during this time and ensuring the obstacle is still in the same position.
     
         }
         if(IR==0)//checking the value of IR sensor for LOW output
@@ -575,7 +576,7 @@ void main()
     ESP8266_send_string(cmd);//sending the IP address to connect to thingspeak server
     getStr = "GET /update?api_key="+apiKey;//updating the value using API write key
     getStr = "&field1=" + getStr + value2;//updating the value using API write key
-            
+            __delay_ms(200000);//thingspeak updating during this time and ensuring the obstacle is still in the same position. 
         }
     }
     
